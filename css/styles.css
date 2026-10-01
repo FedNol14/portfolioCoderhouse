@@ -1,0 +1,350 @@
+/* Estilos Generales */
+
+:root{
+    --colorBlanco: rgb(240, 248, 255);
+    --colorNegro: rgb(0, 0, 0);
+}
+
+*{    
+    font-family: "Parkinsans", sans-serif !important; 
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header a{
+    color: var(--colorBlanco);
+    text-decoration: none;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.wpp-container{
+    background-color: var(--colorNegro);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.wpp-logo{
+    width: 2.4rem;
+}
+
+.titulos-decoration{
+    margin: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-align: center;
+}
+
+/* Estilos Header */
+
+.index-header{
+    background-image: url(../img/background-header.jpg);
+    background-size: cover; /* Para que tome las medidas para ajustarse lo mejor posible*/
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    position: relative;
+}
+
+.proyectos-header{
+    background-image: url(../img/background-proyectos.jpg);
+    background-size: 125vh;
+    background-position: 100vh;
+    height: 70vh;
+}
+
+.navbar-brand{
+    font-size: 0.8rem;
+}
+
+.navbar-nav li{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    border: solid 1px #c5bcbc;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px 0px var(--colorNegro);
+    font-weight: 500;
+}
+
+.index-header-introduccion{
+    color: var(--colorBlanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.index-header-introduccion h2{
+    margin-top: 4rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.index-header-introduccion p{
+    width: 80%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-botones{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.index-header-linkedin{
+    width: 2rem;
+    height: 2rem;
+}
+
+.index-header-github{
+    width: 2rem;
+    height: 2rem;
+}
+
+.index-h1{
+    color: var(--colorBlanco);
+    font-size: 1rem;
+}
+
+.index-header-buttom{
+    background-color: rgba(92, 85, 70, 0.966);
+    padding: 0.5rem 2rem;
+    border-radius: 0.3rem;
+    border: none;
+    color:var(--colorBlanco);
+}
+
+.index-header-contenedor-superior{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* Main Estilos */
+
+.experiencia-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.card-experiencia{
+    background-color: black;
+    height: 35vh;
+    color: #fff;
+    max-width: 25rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.card-experiencia h2{
+    padding: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card-experiencia h4{
+    padding: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilos de Main*/
+
+main{
+    margin: 2rem 0;
+}
+
+.carousel-img{
+    height: 14rem;
+    object-fit: cover;
+}
+
+.carousel-caption h5{
+    display: flex;
+    justify-content: center;
+    color: hsla(0, 20%, 100%, 1);
+}
+
+.carousel-caption p{
+    color: rgba(250, 250, 250, 0.801)
+}
+
+/* Footer Estilos */
+
+footer{
+    background-color: rgb(228, 228, 228);
+}
+
+
+.index-footer p{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+footer img{
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width:750px){
+    .index-header{
+        height: 67vh;
+    }
+
+    .navbar-brand{
+        font-size: 1rem;
+    }
+
+
+    .index-header-introduccion h2{
+        margin: 0;
+        font-size: 2rem;
+    }
+    
+
+    .proyectos-header{
+        background-image: url(../img/background-proyectos.jpg);
+        background-size: 150vh;
+        background-position: 0;
+        height: 60vh;
+    }
+
+    .titulo-proyecto{
+        background-color: #fff;
+        margin-bottom: 3rem;
+    }
+
+    .main-proyectos{
+        margin-top: 8rem;
+        background-color: #fff;
+    }
+
+    .cards-proyectos{
+        margin: 1rem;
+    }
+
+    .carousel-img{
+    height: 30rem;
+    object-fit: cover;
+    }
+
+    .card-experiencia{
+        height: 25vh;
+    }    
+
+    .card-proyecto{
+        width: 90%;
+        display: flex;
+    }
+
+    .card-proyecto h3{
+        width: 100%;
+    }
+
+    .contenedor-proyectos-grid p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (min-width:1400px){
+    .index-h1{
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+
+    .index-header-introduccion{
+        margin: 0;
+        gap: 2rem;
+    }
+
+    .proyectos-header{
+        background-image: url(../img/background-proyectos.jpg);
+        background-size: 210vh;
+        background-position: 0;
+        height: 70vh;
+    }
+
+    .card-experiencia{
+        height: 18rem;
+    }
+
+    .carousel-item{
+        margin-bottom: 1rem;
+    }
+
+    .carousel-img{
+        height: 38rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main-proyectos{
+        margin: 4rem;
+    }
+
+
+    .contenedor-proyectos-grid{
+        display: grid;
+
+    }
+
+    .contenedor-proyectos-grid img{
+        display: grid;
+    }
+
+    .contenedor-proyectos-grid p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
